@@ -77,22 +77,24 @@
               <div class="child" style="width: 30%">
                 <br />
                 <!-- <br /> -->
-                <div class="circle-heading-left">
-                  Reliable and Unbiased Reporting
+                <div>
+                  <div class="circle-heading-left">
+                    Reliable and Unbiased Reporting
+                  </div>
+                  <div class="circle-paragraph-left">
+                    We prioritize delivering news with integrity, ensuring that
+                    you receive accurate and unbiased information.
+                  </div>
                 </div>
-                <div class="circle-paragraph-left">
-                  We prioritize delivering news with integrity, ensuring that
-                  you receive accurate and unbiased information.
-                </div>
-                <br />
-                <br />
-                <br />
-
-                <div class="circle-heading-left">AI-Powered News Assistant</div>
-                <div class="circle-paragraph-left">
-                  Our cutting-edge AI technology enhances your news experience,
-                  providing you with personalized and relevant updates tailored
-                  to your preferences
+                <div>
+                  <div class="circle-heading-left">
+                    AI-Powered News Assistant
+                  </div>
+                  <div class="circle-paragraph-left">
+                    Our cutting-edge AI technology enhances your news
+                    experience, providing you with personalized and relevant
+                    updates tailored to your preferences
+                  </div>
                 </div>
               </div>
               <div class="child2" style="width: 30%">
@@ -102,27 +104,28 @@
               <div class="child" style="width: 30%">
                 <br />
                 <!-- <br /> -->
-                <div class="circle-heading-right">Personalized Features</div>
-                <div class="circle-paragraph-right">
-                  Enjoy daily horoscopes and other personalized features that
-                  make your news experience uniquely tailored to you.
+                <div>
+                  <div class="circle-heading-right">Personalized Features</div>
+                  <div class="circle-paragraph-right">
+                    Enjoy daily horoscopes and other personalized features that
+                    make your news experience uniquely tailored to you.
+                  </div>
                 </div>
-                <br />
-                <br />
+
                 <!-- <br /> -->
-                <div class="circle-heading-right">
-                  Summarized News for Time Efficiency
-                </div>
-                <div class="circle-paragraph-right">
-                  We know your time is valuable. That's why we provide
-                  summarized news to keep you informed without overwhelming you
-                  with unnecessary details.
+                <div>
+                  <div class="circle-heading-right">
+                    Summarized News for Time Efficiency
+                  </div>
+                  <div class="circle-paragraph-right">
+                    We know your time is valuable. That's why we provide
+                    summarized news to keep you informed without overwhelming
+                    you with unnecessary details.
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              style="display: flex; justify-content: center; margin-top: 20px"
-            >
+            <div class="listen-div">
               <div style="width: 50%">
                 <div
                   style="font-weight: 700; text-align: center; font-size: 20px"
@@ -192,6 +195,10 @@
             src: url('path/to/HKGrotesk-Regular.ttf') format('truetype');
 
         } */
+  .child2 {
+    display: flex;
+    justify-content: center;
+  }
   .circle-heading-right {
     font-weight: 700;
     text-align: start;
@@ -206,11 +213,18 @@
     text-align: end;
     font-size: 15px;
     padding-left: 80px;
+    margin-bottom: 40px;
   }
   .circle-paragraph-right {
     text-align: start;
     font-size: 15px;
     padding-right: 80px;
+    margin-bottom: 40px;
+  }
+  .listen-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
   .mob-text {
     padding: 2%;
@@ -290,6 +304,7 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   @media only screen and (max-width: 1100px) {
     .mob-img {
       height: 500px;
@@ -312,6 +327,39 @@
       text-align: start;
       font-size: 15px;
       padding-right: 25px;
+    }
+  }
+  @media only screen and (max-width: 1100px) {
+    .listen-div {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+    }
+    .second-div {
+      margin-top: 10%;
+      width: 100%;
+      height: 400px;
+      background-color: #ff0053;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .second-div-second {
+      width: 40%;
+      margin-left: 150px;
+    }
+    .second-div-secondd {
+      width: 40%;
+      margin-right: 150px;
+    }
+    .mob-text {
+      padding: 2%;
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 140px;
     }
   }
 </style>
