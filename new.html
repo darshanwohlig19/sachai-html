@@ -73,7 +73,7 @@
               <div class="child" style="width: 30%">
                 <br />
                 <!-- <br /> -->
-                <div>
+                <div class="div-container-top">
                   <div class="circle-heading-left">
                     Reliable and Unbiased Reporting
                   </div>
@@ -105,7 +105,7 @@
               <div class="child" style="width: 30%">
                 <br />
                 <!-- <br /> -->
-                <div>
+                <div class="div-container-top">
                   <div class="circle-heading-right">Personalized Features</div>
                   <div class="circle-paragraph-right">
                     Enjoy daily horoscopes and other personalized features that
@@ -196,10 +196,10 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
   /* @font-face {
-            font-family: 'HKGrotesk';
-            src: url('path/to/HKGrotesk-Regular.ttf') format('truetype');
+                font-family: 'HKGrotesk';
+                src: url('path/to/HKGrotesk-Regular.ttf') format('truetype');
 
-        } */
+            } */
   .listen-head {
     font-weight: 700;
     text-align: center;
@@ -231,6 +231,7 @@
   .child2 {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .circle-heading-right {
     font-weight: 700;
@@ -313,11 +314,11 @@
   }
   .second-div-second {
     width: 40%;
-    margin-left: 200px;
+    margin-left: 0px;
   }
   .second-div-secondd {
     width: 40%;
-    margin-right: 200px;
+    margin-right: 0px;
   }
   .flex {
     display: flex;
@@ -342,6 +343,7 @@
   @media only screen and (max-width: 1100px) {
     .mob-img {
       height: 500px;
+      width: 60%;
     }
     .mob-text {
       padding: 2%;
@@ -362,8 +364,6 @@
       font-size: 15px;
       padding-right: 25px;
     }
-  }
-  @media only screen and (max-width: 1100px) {
     .listen-div {
       display: flex;
       justify-content: center;
@@ -376,15 +376,17 @@
       background-color: #ff0053;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     .second-div-second {
-      width: 40%;
-      margin-left: 150px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      /* margin-left: 150px; */
     }
     .second-div-secondd {
-      width: 40%;
-      margin-right: 150px;
+      width: 50%;
+      /* margin-right: 150px; */
     }
     .mob-text {
       padding: 2%;
@@ -396,6 +398,7 @@
       margin-left: 140px;
     }
   }
+
   @media only screen and (max-width: 900px) {
     .first-div-first-head {
       font-size: 34px;
@@ -413,7 +416,7 @@
     }
     .mob-img {
       height: 440px;
-      width: 70%;
+      width: 60%;
       margin-top: -14%;
     }
     .mob-img-text {
@@ -509,7 +512,7 @@
       width: 100%;
       height: 200px;
       /* display: flex;
-      flex-direction: row; */
+          flex-direction: row; */
       /* justify-content: space-around; */
     }
     .h1 {
@@ -585,6 +588,38 @@
     }
     .listen-div {
       margin-top: -8%;
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    .circle-img {
+      width: 200px;
+      height: 180px;
+    }
+    .circle-heading-left {
+      font-size: 16px;
+    }
+    .circle-heading-right {
+      font-size: 16px;
+    }
+    .circle-paragraph-left {
+      font-size: 14px;
+      padding: 0px;
+    }
+    .circle-paragraph-right {
+      font-size: 14px;
+      padding: 0px;
+      margin-bottom: 57px;
+    }
+    
+    .div-container-top {
+      margin-top: 20px;
+    }
+    .listen-head{
+      font-size: 16px;
+
+    }
+    .listen-para{
+      font-size: 14px;
     }
   }
   @media only screen and (max-width: 400px) {
